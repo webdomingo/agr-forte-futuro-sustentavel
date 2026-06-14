@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Agrinho 2026 — Agro Forte, Futuro Sustentável: equilíbrio entre produção e meio ambiente no Paraná."/>
+  <title>Agrinho 2026 — Agro Forte, Futuro Sustentável</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- SKIP LINK -->
+<a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+<!-- CURSOR -->
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- PROGRESS BAR -->
+<div class="scroll-progress" role="progressbar" aria-label="Progresso de leitura" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ═══ PAINEL ACESSIBILIDADE ═══ -->
+<aside class="a11y-panel" id="a11yPanel" aria-label="Ferramentas de acessibilidade">
+  <button class="a11y-toggle" id="a11yToggle" aria-expanded="false" aria-controls="a11yMenu" aria-label="Abrir acessibilidade">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <circle cx="12" cy="4" r="2"/><path d="M12 6v6m-4-3h8M8 20l4-7 4 7"/>
+    </svg>
+  </button>
+  <div class="a11y-menu" id="a11yMenu" hidden role="dialog" aria-label="Opções de acessibilidade">
+    <p class="a11y-menu-title">Acessibilidade</p>
+
+    <div class="a11y-row">
+      <span id="lbl-theme">Tema</span>
+      <button class="a11y-btn" id="themeToggle" aria-labelledby="lbl-theme" aria-pressed="false">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" id="themeIcon">
+          <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        <span id="themeLabel">Modo Claro</span>
+      </button>
+    </div>
+
+    <div class="a11y-row">
+      <span id="lbl-font">Fonte</span>
+      <div class="a11y-row-group" role="group" aria-labelledby="lbl-font">
+        <button class="a11y-btn a11y-btn-sq" id="fontDown" aria-label="Diminuir fonte">A−</button>
+        <span class="a11y-font-val" id="fontVal" aria-live="polite">100%</span>
+        <button class="a11y-btn a11y-btn-sq" id="fontUp" aria-label="Aumentar fonte">A+</button>
+      </div>
+    </div>
+
+    <div class="a11y-row">
+      <span id="lbl-contrast">Contraste</span>
+      <button class="a11y-btn" id="contrastToggle" aria-labelledby="lbl-contrast" aria-pressed="false">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm0 18V4a8 8 0 0 1 0 16z"/></svg>
+        Alto Contraste
+      </button>
+    </div>
+
+    <div class="a11y-row">
+      <span id="lbl-motion">Animações</span>
+      <button class="a11y-btn" id="motionToggle" aria-labelledby="lbl-motion" aria-pressed="false">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        Reduzir
+      </button>
+    </div>
+
+  </div>
+</aside>
+
+<!-- ═══ NAVEGAÇÃO ═══ -->
+<nav class="nav-float" id="nav" role="navigation" aria-label="Navegação principal">
+  <div class="nav-logo">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <ellipse cx="12" cy="20" rx="8" ry="3" fill="rgba(200,232,122,0.15)"/>
+      <path d="M12 20V10" stroke="#C8E87A" stroke-width="2" stroke-linecap="round"/>
+      <path d="M12 14 Q8 10 6 6" stroke="#8BC34A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <path d="M12 12 Q16 8 18 4" stroke="#8BC34A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <circle cx="12" cy="9" r="2" fill="#C8E87A"/>
+    </svg>
+    <span class="nav-logo-text">Agrinho <em>2026</em></span>
+  </div>
+  <button class="nav-hamburger" id="navHamburger" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="navLinks" role="list">
+    <a href="#terra" class="nav-link" role="listitem">A Terra</a>
+    <a href="#equilibrio" class="nav-link" role="listitem">Equilíbrio</a>
+    <a href="#tecnologia" class="nav-link" role="listitem">Tecnologia</a>
+    <a href="#parana" class="nav-link" role="listitem">Paraná</a>
+    <a href="#mapa" class="nav-link" role="listitem">Mapa PR</a>
+    <a href="#vozes" class="nav-link" role="listitem">Vozes</a>
+    <a href="#voce" class="nav-link" role="listitem">Você</a>
+    <a href="#jogo" class="nav-link" role="listitem">Jogo</a>
+  </div>
+  <div class="nav-indicator" aria-hidden="true"></div>
+</nav>
+
+<!-- OVERLAY MOBILE -->
+<div class="mobile-overlay" id="mobileOverlay" aria-hidden="true">
+  <button class="mobile-close" id="mobileClose" aria-label="Fechar menu">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <a href="#terra"      class="mobile-nav-link">A Terra</a>
+  <a href="#equilibrio" class="mobile-nav-link">Equilíbrio</a>
+  <a href="#tecnologia" class="mobile-nav-link">Tecnologia</a>
+  <a href="#parana"     class="mobile-nav-link">Paraná</a>
+  <a href="#mapa"       class="mobile-nav-link">Mapa PR</a>
+  <a href="#vozes"      class="mobile-nav-link">Vozes</a>
+  <a href="#voce"       class="mobile-nav-link">Você</a>
+  <a href="#jogo"       class="mobile-nav-link">Jogo</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<main id="main-content">
+<section class="hero" id="hero" aria-label="Apresentação">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-landscape" aria-hidden="true">
+    <svg class="landscape-svg" viewBox="0 0 1440 500" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#0A1A0D"/>
+          <stop offset="100%" stop-color="#1C4A1E"/>
+        </linearGradient>
+        <linearGradient id="soilGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#8B4513"/>
+          <stop offset="100%" stop-color="#5C2E00"/>
+        </linearGradient>
+        <filter id="softGlow"><feGaussianBlur stdDeviation="8" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <path class="mountain far" d="M0 350 L180 180 L360 310 L540 150 L720 280 L900 120 L1080 260 L1260 140 L1440 300 L1440 500 L0 500Z" fill="#0F2A10" opacity="0.6"/>
+      <path class="mountain mid" d="M0 400 L240 220 L480 350 L720 200 L960 330 L1200 190 L1440 360 L1440 500 L0 500Z" fill="#1C4A1E" opacity="0.7"/>
+      <g class="forest-left">
+        <ellipse cx="60" cy="340" rx="55" ry="80" fill="#1C4A1E"/><ellipse cx="60" cy="290" rx="40" ry="60" fill="#2D5A1B"/>
+        <rect x="52" y="380" width="16" height="60" fill="#5C2E00"/>
+        <ellipse cx="130" cy="360" rx="50" ry="70" fill="#1A3A0F"/><ellipse cx="130" cy="315" rx="36" ry="55" fill="#2D5A1B"/>
+        <rect x="123" y="390" width="14" height="50" fill="#5C2E00"/>
+        <ellipse cx="195" cy="355" rx="45" ry="65" fill="#1C4A1E"/><ellipse cx="195" cy="308" rx="32" ry="50" fill="#3D7A20"/>
+        <rect x="188" y="385" width="14" height="55" fill="#5C2E00"/>
+      </g>
+      <g class="forest-right">
+        <ellipse cx="1380" cy="340" rx="55" ry="80" fill="#1C4A1E"/><ellipse cx="1380" cy="290" rx="40" ry="60" fill="#2D5A1B"/>
+        <rect x="1372" y="380" width="16" height="60" fill="#5C2E00"/>
+        <ellipse cx="1310" cy="360" rx="50" ry="70" fill="#1A3A0F"/><ellipse cx="1310" cy="315" rx="36" ry="55" fill="#2D5A1B"/>
+        <rect x="1303" y="390" width="14" height="50" fill="#5C2E00"/>
+        <ellipse cx="1245" cy="355" rx="45" ry="65" fill="#1C4A1E"/><ellipse cx="1245" cy="308" rx="32" ry="50" fill="#3D7A20"/>
+        <rect x="1238" y="385" width="14" height="55" fill="#5C2E00"/>
+      </g>
+      <g class="crop-field">
+        <rect x="250" y="400" width="940" height="100" fill="url(#soilGrad)" rx="2"/>
+        <line x1="260" y1="410" x2="1180" y2="410" stroke="#6B3410" stroke-width="2" opacity="0.5"/>
+        <line x1="260" y1="425" x2="1180" y2="425" stroke="#6B3410" stroke-width="2" opacity="0.5"/>
+        <line x1="260" y1="440" x2="1180" y2="440" stroke="#6B3410" stroke-width="2" opacity="0.5"/>
+        <g id="plantsRow1"></g>
+      </g>
+      <path class="river" d="M500 500 Q520 460 480 430 Q440 400 460 370 Q480 340 520 360 Q560 380 600 350" stroke="#4A90D9" stroke-width="6" fill="none" opacity="0.5" stroke-linecap="round"/>
+      <circle class="celestial-body" id="sun" cx="720" cy="80" r="45" fill="#F0C040" opacity="0.9" filter="url(#softGlow)"/>
+      <g id="sunRays" opacity="0.4">
+        <line x1="720" y1="18" x2="720" y2="5" stroke="#F0C040" stroke-width="3" stroke-linecap="round"/>
+        <line x1="720" y1="142" x2="720" y2="155" stroke="#F0C040" stroke-width="3" stroke-linecap="round"/>
+        <line x1="658" y1="80" x2="645" y2="80" stroke="#F0C040" stroke-width="3" stroke-linecap="round"/>
+        <line x1="782" y1="80" x2="795" y2="80" stroke="#F0C040" stroke-width="3" stroke-linecap="round"/>
+        <line x1="676" y1="36" x2="667" y2="27" stroke="#F0C040" stroke-width="3" stroke-linecap="round"/>
+        <line x1="764" y1="124" x2="773" y2="133" stroke="#F0C040" stroke-width="3" stroke-linecap="round"/>
+        <line x1="764" y1="36" x2="773" y2="27" stroke="#F0C040" stroke-width="3" stroke-linecap="round"/>
+        <line x1="676" y1="124" x2="667" y2="133" stroke="#F0C040" stroke-width="3" stroke-linecap="round"/>
+      </g>
+      <g class="birds" id="birds">
+        <path d="M300 120 Q308 114 316 120 Q324 114 332 120" stroke="#C8E87A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <path d="M1100 90 Q1108 84 1116 90 Q1124 84 1132 90" stroke="#C8E87A" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <path d="M850 150 Q856 145 862 150 Q868 145 874 150" stroke="#C8E87A" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </g>
+    </svg>
+  </div>
+  <canvas id="particles-canvas" class="particles-canvas" aria-hidden="true"></canvas>
+  <div class="hero-content">
+    <div class="hero-eyebrow" aria-hidden="true"><span class="eyebrow-line"></span><span class="eyebrow-text">Concurso Agrinho 2026</span><span class="eyebrow-line"></span></div>
+    <h1 class="hero-title">
+      <span class="title-line line-1">Agro Forte,</span>
+      <span class="title-line line-2"><em>Futuro</em></span>
+      <span class="title-line line-3">Sustentável</span>
+    </h1>
+    <p class="hero-subtitle">Equilíbrio entre produção e meio ambiente —<br>dois pulmões do mesmo ser vivo.</p>
+    <div class="hero-cta">
+      <a href="#terra" class="btn-primary">
+        <span>Descobrir</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="hero-badges" aria-hidden="true">
+    <div class="badge badge-1"><span class="badge-number">2°</span><span class="badge-label">maior agro<br>do mundo</span></div>
+    <div class="badge badge-2"><span class="badge-number">66%</span><span class="badge-label">vegetação<br>nativa preservada</span></div>
+  </div>
+  <div class="scroll-indicator" aria-hidden="true">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span>role para descobrir</span>
+  </div>
+</section>
+
+<!-- ═══ A TERRA FALA ═══ -->
+<section class="section-terra" id="terra" aria-labelledby="terra-h2">
+  <div class="section-bg-terra"><canvas id="soil-canvas" aria-hidden="true"></canvas></div>
+  <div class="container">
+    <header class="section-header">
+      <div class="section-tag">A Terra Fala</div>
+      <h2 class="section-title" id="terra-h2">O Brasil é a terra<br><em>que alimenta o mundo</em></h2>
+      <p class="section-desc">Por baixo de cada safra, existe uma história de equilíbrio. Os números do agro brasileiro revelam um setor que aprendeu a crescer sem destruir.</p>
+    </header>
+    <div class="counters-grid" role="list">
+
+      <article class="counter-card" role="listitem">
+        <div class="counter-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <rect x="16" y="22" width="4" height="12" fill="#5C2E00" rx="1"/>
+            <ellipse cx="18" cy="22" rx="10" ry="12" fill="#2D5A1B"/>
+            <ellipse cx="18" cy="16" rx="7" ry="8" fill="#3D7A20"/>
+            <ellipse cx="18" cy="11" rx="4" ry="5" fill="#C8E87A" opacity="0.8"/>
+            <path d="M12 17 Q18 15 24 17" stroke="#8BC34A" stroke-width="1" fill="none"/>
+          </svg>
+        </div>
+        <div class="counter-number"><span class="counter-val" data-target="320">0</span><span class="counter-suffix">Mi</span></div>
+        <div class="counter-label">toneladas de grãos<br>produzidas por ano</div>
+        <div class="counter-bar" role="presentation"><div class="counter-fill" style="--fill:85%"></div></div>
+      </article>
+
+      <article class="counter-card" role="listitem">
+        <div class="counter-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <polygon points="18,4 21.5,13.5 32,13.5 23.5,19.5 26.5,29 18,23 9.5,29 12.5,19.5 4,13.5 14.5,13.5" fill="#F0C040" opacity="0.9"/>
+          </svg>
+        </div>
+        <div class="counter-number"><span class="counter-val" data-target="1">0</span><span class="counter-suffix">°</span></div>
+        <div class="counter-label">exportador mundial de<br>soja, carne bovina e frango</div>
+        <div class="counter-bar" role="presentation"><div class="counter-fill" style="--fill:100%"></div></div>
+      </article>
+
+      <article class="counter-card" role="listitem">
+        <div class="counter-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <circle cx="18" cy="18" r="14" fill="none" stroke="#4A90D9" stroke-width="1.5" opacity="0.5"/>
+            <ellipse cx="18" cy="26" rx="10" ry="4" fill="#1C4A1E" opacity="0.4"/>
+            <path d="M18 28 C10 24 6 16 10 10 C14 4 22 4 26 10 C30 16 26 24 18 28Z" fill="#2D5A1B"/>
+            <path d="M18 28 C26 24 30 16 26 10" fill="none" stroke="#C8E87A" stroke-width="1.5" opacity="0.5"/>
+            <path d="M12 15 L16 19 L24 11" stroke="#C8E87A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="counter-number"><span class="counter-val" data-target="66">0</span><span class="counter-suffix">%</span></div>
+        <div class="counter-label">do território com<br>vegetação nativa preservada</div>
+        <div class="counter-bar" role="presentation"><div class="counter-fill" style="--fill:66%"></div></div>
+      </article>
+
+      <article class="counter-card" role="listitem">
+        <div class="counter-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M18 6 L18 30" stroke="#4A90D9" stroke-width="2" stroke-linecap="round"/>
+            <path d="M10 12 Q14 16 18 12 Q22 8 26 12" stroke="#C8E87A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M8 22 Q13 26 18 22 Q23 18 28 22" stroke="#8BC34A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <circle cx="18" cy="6" r="3" fill="#4A90D9"/>
+            <path d="M14 30 Q18 28 22 30" stroke="#8B4513" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="counter-number"><span class="counter-val" data-target="24">0</span><span class="counter-suffix">%</span></div>
+        <div class="counter-label">de redução de emissões<br>por tonelada produzida</div>
+        <div class="counter-bar" role="presentation"><div class="counter-fill" style="--fill:60%"></div></div>
+      </article>
+
+      <article class="counter-card" role="listitem">
+        <div class="counter-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <rect x="4" y="22" width="8" height="12" fill="#C8E87A" rx="1" opacity="0.8"/>
+            <rect x="14" y="16" width="8" height="18" fill="#8BC34A" rx="1" opacity="0.9"/>
+            <rect x="24" y="10" width="8" height="24" fill="#C8E87A" rx="1"/>
+            <path d="M8 22 Q18 12 28 10" stroke="#F0C040" stroke-width="1.5" fill="none" stroke-dasharray="3 2"/>
+            <circle cx="8" cy="22" r="2" fill="#F0C040"/>
+            <circle cx="18" cy="16" r="2" fill="#F0C040"/>
+            <circle cx="28" cy="10" r="2" fill="#F0C040"/>
+          </svg>
+        </div>
+        <div class="counter-number"><span class="counter-val" data-target="28">0</span><span class="counter-suffix">Mi</span></div>
+        <div class="counter-label">hectares em recuperação<br>de pastagens degradadas</div>
+        <div class="counter-bar" role="presentation"><div class="counter-fill" style="--fill:70%"></div></div>
+      </article>
+
+      <article class="counter-card" role="listitem">
+        <div class="counter-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <circle cx="18" cy="18" r="5" fill="#C8E87A"/>
+            <circle cx="18" cy="7" r="3.5" fill="#8BC34A" opacity="0.8"/>
+            <circle cx="18" cy="29" r="3.5" fill="#8BC34A" opacity="0.8"/>
+            <circle cx="7" cy="18" r="3.5" fill="#8BC34A" opacity="0.8"/>
+            <circle cx="29" cy="18" r="3.5" fill="#8BC34A" opacity="0.8"/>
+            <circle cx="10.5" cy="10.5" r="2.5" fill="#3D7A20" opacity="0.7"/>
+            <circle cx="25.5" cy="10.5" r="2.5" fill="#3D7A20" opacity="0.7"/>
+            <circle cx="10.5" cy="25.5" r="2.5" fill="#3D7A20" opacity="0.7"/>
+            <circle cx="25.5" cy="25.5" r="2.5" fill="#3D7A20" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="counter-number"><span class="counter-val" data-target="5000">0</span><span class="counter-suffix">+</span></div>
+        <div class="counter-label">espécies cultivadas<br>de forma sustentável</div>
+        <div class="counter-bar" role="presentation"><div class="counter-fill" style="--fill:78%"></div></div>
+      </article>
+
+    </div>
+    <div class="terra-quote">
+      <blockquote>A terra que nos alimenta também nos ensina:<br><em>colher com cuidado é plantar o futuro.</em></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ EQUILÍBRIO ═══ -->
+<section class="section-equilibrio" id="equilibrio" aria-labelledby="equilibrio-h2">
+  <div class="container">
+    <header class="section-header">
+      <div class="section-tag">O Equilíbrio</div>
+      <h2 class="section-title" id="equilibrio-h2">Dois lados<br><em>do mesmo ser</em></h2>
+      <p class="section-desc">Produção e natureza não são opostos. São parceiros num ciclo que se sustenta quando respeitamos as regras da terra.</p>
+    </header>
+    <div class="balance-container" id="balanceContainer">
+      <div class="balance-left" id="balanceLeft" tabindex="0" role="button" aria-label="Detalhes sobre produção">
+        <div class="balance-inner">
+          <div class="balance-icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <rect x="8" y="32" width="32" height="8" fill="#8B4513" rx="2" opacity="0.5"/>
+              <path d="M14 32 L14 22 Q14 14 24 14 Q34 14 34 22 L34 32" stroke="#C8E87A" stroke-width="1.5" fill="rgba(200,232,122,0.06)"/>
+              <path d="M24 14 L24 6" stroke="#8BC34A" stroke-width="2" stroke-linecap="round"/>
+              <path d="M20 10 Q24 6 28 10" fill="none" stroke="#8BC34A" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M18 22 Q24 20 30 22" stroke="#C8E87A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <path d="M16 27 Q24 25 32 27" stroke="#C8E87A" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3>Produção</h3>
+          <ul class="balance-list">
+            <li><span class="bl-dot" aria-hidden="true"></span>Tecnologia de precisão</li>
+            <li><span class="bl-dot" aria-hidden="true"></span>Menor uso de insumos</li>
+            <li><span class="bl-dot" aria-hidden="true"></span>Maior produtividade por hectare</li>
+            <li><span class="bl-dot" aria-hidden="true"></span>Rastreabilidade total da cadeia</li>
+            <li><span class="bl-dot" aria-hidden="true"></span>Geração de renda e emprego</li>
+          </ul>
+          <div class="balance-stat"><span class="bs-number">+180%</span><span class="bs-desc">de produtividade<br>nos últimos 40 anos</span></div>
+        </div>
+      </div>
+      <div class="balance-divider" id="balanceDivider" aria-hidden="true">
+        <div class="divider-circle">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="35" fill="none" stroke="#C8E87A" stroke-width="2" stroke-dasharray="4 4"/>
+            <circle cx="40" cy="40" r="20" fill="#0A1A0D"/>
+            <path d="M40 20 C40 20 32 30 32 40 C32 50 40 60 40 60 C40 60 48 50 48 40 C48 30 40 20 40 20Z" fill="#C8E87A" opacity="0.8"/>
+            <path d="M20 40 C20 40 30 32 40 32 C50 32 60 40 60 40 C60 40 50 48 40 48 C30 48 20 40 20 40Z" fill="#8BC34A" opacity="0.6"/>
+          </svg>
+        </div>
+        <span class="divider-label">EQUILÍBRIO</span>
+      </div>
+      <div class="balance-right" id="balanceRight" tabindex="0" role="button" aria-label="Detalhes sobre natureza">
+        <div class="balance-inner">
+          <div class="balance-icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <ellipse cx="24" cy="34" rx="14" ry="5" fill="#1C4A1E" opacity="0.4"/>
+              <ellipse cx="24" cy="26" rx="12" ry="14" fill="#2D5A1B"/>
+              <ellipse cx="24" cy="18" rx="8" ry="9" fill="#3D7A20"/>
+              <ellipse cx="24" cy="13" rx="5" ry="5" fill="#8BC34A" opacity="0.8"/>
+              <rect x="22" y="34" width="4" height="10" fill="#5C2E00" rx="1"/>
+            </svg>
+          </div>
+          <h3>Natureza</h3>
+          <ul class="balance-list">
+            <li><span class="bl-dot bl-green" aria-hidden="true"></span>Preservação de nascentes</li>
+            <li><span class="bl-dot bl-green" aria-hidden="true"></span>Corredores ecológicos</li>
+            <li><span class="bl-dot bl-green" aria-hidden="true"></span>Reflorestamento produtivo</li>
+            <li><span class="bl-dot bl-green" aria-hidden="true"></span>Crédito de carbono florestal</li>
+            <li><span class="bl-dot bl-green" aria-hidden="true"></span>Biodiversidade como aliada</li>
+          </ul>
+          <div class="balance-stat"><span class="bs-number">+3Mi</span><span class="bs-desc">hectares reflorestados<br>em 10 anos</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TECNOLOGIAS ═══ -->
+<section class="section-tech" id="tecnologia" aria-labelledby="tech-h2">
+  <div class="tech-bg" aria-hidden="true"><div class="tech-grid-overlay"></div></div>
+  <div class="container">
+    <header class="section-header">
+      <div class="section-tag section-tag-amber">Tecnologias do Futuro</div>
+      <h2 class="section-title" id="tech-h2">Inovação que<br><em>respeita a terra</em></h2>
+      <p class="section-desc">O agro brasileiro está na vanguarda mundial com tecnologias que unem produtividade e responsabilidade ambiental.</p>
+    </header>
+    <div class="tech-grid" role="list">
+
+      <article class="tech-card" data-tilt role="listitem" tabindex="0">
+        <div class="tech-card-glow" aria-hidden="true"></div>
+        <div class="tech-card-inner">
+          <div class="tech-card-icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="20" stroke="#C8E87A" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <path d="M24 14 L30 26 L24 22 L18 26Z" fill="#C8E87A"/>
+              <circle cx="24" cy="34" r="3" fill="#F0C040"/>
+              <path d="M24 34 L24 38" stroke="#F0C040" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M18 38 Q24 36 30 38" stroke="#F0C040" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3 class="tech-card-title">Agricultura de Precisão</h3>
+          <p class="tech-card-desc">Drones e sensores IoT mapeiam o solo em tempo real, aplicando insumos exatamente onde e quanto o campo precisa. Menos desperdício, mais colheita.</p>
+          <div class="tech-card-stat"><span class="tcs-num">-40%</span><span class="tcs-label">no uso de agroquímicos</span></div>
+          <div class="tech-card-tag">Drones + IoT</div>
+        </div>
+      </article>
+
+      <article class="tech-card tech-card-featured" data-tilt role="listitem" tabindex="0">
+        <div class="tech-card-glow glow-amber" aria-hidden="true"></div>
+        <div class="tech-card-inner">
+          <div class="tech-card-icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <rect x="8" y="28" width="8" height="14" fill="#F0C040" rx="1"/>
+              <rect x="20" y="18" width="8" height="24" fill="#C8E87A" rx="1"/>
+              <rect x="32" y="10" width="8" height="32" fill="#F0C040" rx="1"/>
+              <path d="M8 28 Q20 14 32 10" stroke="#8BC34A" stroke-width="1.5" fill="none" stroke-dasharray="3 2"/>
+            </svg>
+          </div>
+          <h3 class="tech-card-title">Crédito de Carbono Verde</h3>
+          <p class="tech-card-desc">Produtores rurais que preservam e reflorestam recebem créditos de carbono negociados globalmente. A floresta se torna também um produto sustentável.</p>
+          <div class="tech-card-stat"><span class="tcs-num">R$50Bi</span><span class="tcs-label">potencial de mercado no Brasil</span></div>
+          <div class="tech-card-tag">Mercado de Carbono</div>
+        </div>
+        <div class="tech-card-badge" aria-label="Destaque">DESTAQUE</div>
+      </article>
+
+      <article class="tech-card" data-tilt role="listitem" tabindex="0">
+        <div class="tech-card-glow" aria-hidden="true"></div>
+        <div class="tech-card-inner">
+          <div class="tech-card-icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <path d="M24 8 L24 40" stroke="#C8E87A" stroke-width="2" stroke-linecap="round"/>
+              <path d="M12 16 Q18 20 24 16 Q30 12 36 16" stroke="#8BC34A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <path d="M10 28 Q18 32 24 28 Q30 24 38 28" stroke="#C8E87A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <circle cx="24" cy="8" r="3" fill="#F0C040"/>
+              <circle cx="24" cy="40" r="3" fill="#8B4513"/>
+            </svg>
+          </div>
+          <h3 class="tech-card-title">Integração Lavoura-Pecuária-Floresta</h3>
+          <p class="tech-card-desc">Sistema iLPF combina culturas, gado e árvores no mesmo espaço. A terra descansa, o solo se regenera e a produção não para — nunca.</p>
+          <div class="tech-card-stat"><span class="tcs-num">+35%</span><span class="tcs-label">em produtividade por hectare</span></div>
+          <div class="tech-card-tag">Sistema iLPF</div>
+        </div>
+      </article>
+
+      <article class="tech-card" data-tilt role="listitem" tabindex="0">
+        <div class="tech-card-glow" aria-hidden="true"></div>
+        <div class="tech-card-inner">
+          <div class="tech-card-icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="20" r="12" fill="none" stroke="#F0C040" stroke-width="1.5"/>
+              <path d="M24 8 L24 4 M24 36 L24 40 M12 20 L8 20 M36 20 L40 20" stroke="#F0C040" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="24" cy="20" r="5" fill="#F0C040" opacity="0.8"/>
+              <path d="M12 34 L18 28 L30 28 L36 34" stroke="#C8E87A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <line x1="24" y1="28" x2="24" y2="34" stroke="#C8E87A" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="tech-card-title">Energia Solar no Campo</h3>
+          <p class="tech-card-desc">Sistemas fotovoltaicos abastecem propriedades rurais, reduzem custos de energia e permitem exportar o excedente para a rede elétrica nacional.</p>
+          <div class="tech-card-stat"><span class="tcs-num">-60%</span><span class="tcs-label">na conta de energia elétrica</span></div>
+          <div class="tech-card-tag">Energia Limpa</div>
+        </div>
+      </article>
+
+      <article class="tech-card" data-tilt role="listitem" tabindex="0">
+        <div class="tech-card-glow" aria-hidden="true"></div>
+        <div class="tech-card-inner">
+          <div class="tech-card-icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <rect x="10" y="20" width="28" height="20" rx="3" fill="none" stroke="#C8E87A" stroke-width="1.5"/>
+              <path d="M16 20 L16 14 Q16 8 24 8 Q32 8 32 14 L32 20" stroke="#8BC34A" stroke-width="1.5" fill="none"/>
+              <circle cx="24" cy="30" r="4" fill="#F0C040"/>
+              <path d="M24 34 L24 38" stroke="#F0C040" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="tech-card-title">Rastreabilidade Digital</h3>
+          <p class="tech-card-desc">Do campo à mesa, blockchain e QR codes registram toda a cadeia produtiva. O consumidor sabe exatamente de onde vem o alimento no prato.</p>
+          <div class="tech-card-stat"><span class="tcs-num">100%</span><span class="tcs-label">de transparência na origem</span></div>
+          <div class="tech-card-tag">Blockchain</div>
+        </div>
+      </article>
+
+      <article class="tech-card" data-tilt role="listitem" tabindex="0">
+        <div class="tech-card-glow" aria-hidden="true"></div>
+        <div class="tech-card-inner">
+          <div class="tech-card-icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <path d="M10 38 Q14 22 24 18 Q34 22 38 38" stroke="#C8E87A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <path d="M24 18 L24 10" stroke="#8BC34A" stroke-width="2" stroke-linecap="round"/>
+              <path d="M18 14 L24 10 L30 14" stroke="#8BC34A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <circle cx="24" cy="30" r="5" fill="none" stroke="#F0C040" stroke-width="1.5"/>
+              <circle cx="24" cy="30" r="2" fill="#F0C040"/>
+            </svg>
+          </div>
+          <h3 class="tech-card-title">Sementes Biofortificadas</h3>
+          <p class="tech-card-desc">A Embrapa desenvolve variedades resistentes à seca, ricas em nutrientes e adaptadas ao cerrado — produzindo mais com menos água e insumos.</p>
+          <div class="tech-card-stat"><span class="tcs-num">+90</span><span class="tcs-label">novas cultivares biofortificadas</span></div>
+          <div class="tech-card-tag">Biotecnologia</div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ NOVA SEÇÃO: AGRO NO PARANÁ ═══ -->
+<section class="section-parana" id="parana" aria-labelledby="parana-h2">
+  <div class="container">
+    <header class="section-header">
+      <div class="section-tag section-tag-terra">Agronegócio no Paraná</div>
+      <h2 class="section-title" id="parana-h2">O Paraná que<br><em>produz com consciência</em></h2>
+      <p class="section-desc">O estado do Paraná é referência nacional em agronegócio sustentável. Conheça o que torna o campo paranaense único no Brasil e no mundo.</p>
+    </header>
+
+    <div class="parana-grid">
+      <div class="parana-destaque">
+        <div class="parana-destaque-header">
+          <div class="parana-number">
+            <span class="parana-num-val" data-target="3">0</span>
+            <span class="parana-num-suffix">°</span>
+          </div>
+          <p class="parana-num-label">maior PIB agropecuário do Brasil</p>
+        </div>
+        <p class="parana-destaque-desc">O Paraná é o terceiro estado em valor bruto da produção agropecuária, responsável por mais de <strong>R$ 80 bilhões</strong> anuais e por alimentar dezenas de países.</p>
+        <div class="parana-badges">
+          <span class="p-badge">1° em trigo</span>
+          <span class="p-badge">1° em cevada</span>
+          <span class="p-badge">2° em soja</span>
+          <span class="p-badge">2° em milho</span>
+          <span class="p-badge">2° em frango</span>
+          <span class="p-badge">3° em suínos</span>
+        </div>
+      </div>
+
+      <div class="praticas-grid">
+        <h3 class="praticas-title">Práticas Sustentáveis que o PR usa hoje</h3>
+
+        <article class="pratica-card" tabindex="0">
+          <div class="pratica-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <rect x="4" y="20" width="24" height="8" fill="#8B4513" rx="2" opacity="0.4"/>
+              <path d="M4 20 L4 14 Q4 8 16 8 Q28 8 28 14 L28 20" fill="rgba(200,232,122,0.08)" stroke="#C8E87A" stroke-width="1.5"/>
+              <path d="M16 8 L16 3" stroke="#8BC34A" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M10 5 Q16 2 22 5" fill="none" stroke="#8BC34A" stroke-width="1.2" stroke-linecap="round"/>
+              <path d="M8 15 Q16 13 24 15" stroke="#C8E87A" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.7"/>
+            </svg>
+          </div>
+          <div class="pratica-content">
+            <h4>Plantio Direto</h4>
+            <p>O Paraná é berço do plantio direto no Brasil — técnica que conserva o solo, reduz erosão e sequestra carbono. Mais de 95% da área cultivada usa essa prática.</p>
+            <span class="pratica-tag">Pioneiro no Brasil</span>
+          </div>
+        </article>
+
+        <article class="pratica-card" tabindex="0">
+          <div class="pratica-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M16 28 C8 24 4 16 6 10 C8 4 24 4 26 10 C28 16 24 24 16 28Z" fill="#1C4A1E" stroke="#2D5A1B" stroke-width="1"/>
+              <path d="M16 28 C24 24 28 16 26 10" fill="none" stroke="#C8E87A" stroke-width="1.2" opacity="0.5"/>
+              <path d="M10 15 L14 19 L22 11" stroke="#C8E87A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="pratica-content">
+            <h4>Zona Ripária e APPs</h4>
+            <p>O estado tem o Programa Mais Natureza, recuperando matas ciliares e nascentes em toda a bacia hidrográfica. São mais de 120 mil km de rios protegidos.</p>
+            <span class="pratica-tag">Programa Estadual</span>
+          </div>
+        </article>
+
+        <article class="pratica-card" tabindex="0">
+          <div class="pratica-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="12" r="7" fill="none" stroke="#F0C040" stroke-width="1.5"/>
+              <path d="M16 5 L16 2 M16 22 L16 25 M9 12 L6 12 M23 12 L26 12" stroke="#F0C040" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="16" cy="12" r="3" fill="#F0C040" opacity="0.7"/>
+              <path d="M8 22 L14 16 L22 16 L28 22" stroke="#C8E87A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+              <line x1="16" y1="16" x2="16" y2="22" stroke="#C8E87A" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="pratica-content">
+            <h4>Agrovoltaica e Bioenergia</h4>
+            <p>O PR lidera o uso de energia de biomassa da cana-de-açúcar e expande painéis solares em propriedades rurais, integrando produção agrícola e geração de energia limpa.</p>
+            <span class="pratica-tag">Energia Renovável</span>
+          </div>
+        </article>
+
+        <article class="pratica-card" tabindex="0">
+          <div class="pratica-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M6 26 Q8 18 16 16 Q24 18 26 26" stroke="#C8E87A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <path d="M16 16 L16 10" stroke="#8BC34A" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 12 L16 10 L20 12" stroke="#8BC34A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+              <ellipse cx="10" cy="20" rx="4" ry="2.5" fill="#2D5A1B" opacity="0.7" transform="rotate(-15,10,20)"/>
+              <ellipse cx="22" cy="21" rx="4" ry="2.5" fill="#2D5A1B" opacity="0.7" transform="rotate(15,22,21)"/>
+              <circle cx="16" cy="10" r="2.5" fill="#C8E87A" opacity="0.8"/>
+            </svg>
+          </div>
+          <div class="pratica-content">
+            <h4>ILPF na Prática</h4>
+            <p>O Paraná é referência nacional no sistema de Integração Lavoura-Pecuária-Floresta — com o projeto "Campo com Árvores", presente em mais de 400 propriedades rurais.</p>
+            <span class="pratica-tag">+400 propriedades</span>
+          </div>
+        </article>
+
+        <article class="pratica-card" tabindex="0">
+          <div class="pratica-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <rect x="6" y="4" width="20" height="24" rx="3" fill="none" stroke="#C8E87A" stroke-width="1.5"/>
+              <path d="M10 10 L22 10 M10 14 L22 14 M10 18 L18 18 M10 22 L16 22" stroke="#C8E87A" stroke-width="1" stroke-linecap="round" opacity="0.7"/>
+              <circle cx="22" cy="20" r="5" fill="#8BC34A" opacity="0.9"/>
+              <path d="M19.5 20 L21.5 22 L24.5 18" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="pratica-content">
+            <h4>SEAB e CAR</h4>
+            <p>O Cadastro Ambiental Rural (CAR) do Paraná tem mais de 280 mil imóveis cadastrados — garantindo rastreabilidade e cumprimento das APPs e Reserva Legal.</p>
+            <span class="pratica-tag">280 mil imóveis</span>
+          </div>
+        </article>
+
+        <article class="pratica-card" tabindex="0">
+          <div class="pratica-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M8 26 Q10 20 16 18 Q22 20 24 26" stroke="#4A90D9" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <circle cx="16" cy="12" r="6" fill="none" stroke="#4A90D9" stroke-width="1.5"/>
+              <path d="M13 12 Q16 8 19 12" fill="#4A90D9" opacity="0.4"/>
+              <path d="M10 26 Q16 24 22 26" stroke="#4A90D9" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.5"/>
+              <path d="M16 6 Q20 10 16 14 Q12 10 16 6Z" fill="#4A90D9" opacity="0.6"/>
+            </svg>
+          </div>
+          <div class="pratica-content">
+            <h4>Irrigação Inteligente</h4>
+            <p>O uso de sensores de umidade e irrigação por gotejamento está expandindo nas regiões de Ponta Grossa e Cascavel, economizando até 50% da água em períodos de seca.</p>
+            <span class="pratica-tag">-50% no consumo</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ NOVA SEÇÃO: MAPA INTERATIVO DO PARANÁ ═══ -->
+<section class="section-mapa" id="mapa" aria-labelledby="mapa-h2">
+  <div class="container">
+    <header class="section-header">
+      <div class="section-tag">Mapa Interativo</div>
+      <h2 class="section-title" id="mapa-h2">O Paraná região<br><em>por região</em></h2>
+      <p class="section-desc">Clique em cada região e descubra os destaques agropecuários e ambientais do Paraná.</p>
+    </header>
+    <div class="mapa-wrapper">
+      <div class="mapa-svg-container" role="application" aria-label="Mapa interativo das regiões agropecuárias do Paraná">
+        <svg id="mapa-pr" viewBox="0 0 730 560" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!--
+            Mapa das 10 Mesorregiões do Paraná (IBGE)
+            Traçado baseado na imagem de referência real.
+            ViewBox 730×560. Norte=topo, Sul=baixo, Oeste=esquerda, Leste=direita.
+
+            Características do contorno real:
+            ‣ Borda OESTE (esquerda): quase vertical, levemente curvada → Rio Paraná
+            ‣ Borda NORTE (topo): larga e irregular, com pequena reentrância central
+            ‣ NORDESTE: recorte côncavo antes de expandir para leste
+            ‣ LESTE (direita): grande projeção da Metropolitana/Litoral para direita
+            ‣ SUL (baixo): borda ondulada, estreita progressivamente para sudoeste
+            ‣ SUDOESTE: ponta afunilada
+          -->
+
+          <!-- ════════════════════════════════════
+               1. NOROESTE DO PARANÁ
+               Grande bloco quadrado no canto NW
+               Cidades: Umuarama, Paranavaí, Cianorte
+          ════════════════════════════════════ -->
+          <path class="pr-region" id="r-nw"
+            data-name="Noroeste do Paraná"
+            data-prod="Cana-de-açúcar · Mandioca · Bovinos de corte · Soja"
+            data-area="24.267 km²"
+            data-highlight="Maior produtor de cana-de-açúcar do estado. Umuarama, Paranavaí e Cianorte são os polos regionais."
+            tabindex="0" role="button" aria-label="Noroeste do Paraná"
+            d="M 43 88
+               L 80 47
+               L 132 32
+               L 246 29
+               L 242 130
+               L 238 241
+               L 185 248
+               L 124 244
+               L 55 238
+               L 34 184
+               L 29 134
+               Z"/>
+
+          <!-- ════════════════════════════════════
+               2. NORTE CENTRAL PARANAENSE
+               Maior mesorregião, centro-norte
+               Cidades: Londrina, Maringá, Apucarana
+          ════════════════════════════════════ -->
+          <path class="pr-region" id="r-nc"
+            data-name="Norte Central Paranaense"
+            data-prod="Soja · Milho · Café · Trigo · Cana-de-açúcar"
+            data-area="24.269 km²"
+            data-highlight="Principal polo de grãos e café do estado. Londrina e Maringá são as maiores cidades do interior paranaense."
+            tabindex="0" role="button" aria-label="Norte Central Paranaense"
+            d="M 246 29
+               L 268 40
+               L 316 30
+               L 386 29
+               L 391 84
+               L 386 142
+               L 355 152
+               L 316 158
+               L 268 162
+               L 242 162
+               L 238 241
+               L 242 130
+               Z"/>
+
+          <!-- ════════════════════════════════════
+               3. NORTE PIONEIRO PARANAENSE
+               Nordeste, borda superior direita
+               Cidades: Jacarezinho, Cornélio Procópio, Bandeirantes
+          ════════════════════════════════════ -->
+          <path class="pr-region" id="r-np"
+            data-name="Norte Pioneiro Paranaense"
+            data-prod="Café · Soja · Mandioca · Laranja · Milho"
+            data-area="15.525 km²"
+            data-highlight="Berço histórico do café paranaense. Cornélio Procópio e Jacarezinho são referências cafeeiras há décadas."
+            tabindex="0" role="button" aria-label="Norte Pioneiro Paranaense"
+            d="M 386 29
+               L 439 32
+               L 482 26
+               L 552 29
+               L 605 46
+               L 640 76
+               L 658 115
+               L 650 142
+               L 612 160
+               L 565 168
+               L 519 165
+               L 480 158
+               L 450 150
+               L 391 84
+               Z"/>
+
+          <!-- ════════════════════════════════════
+               4. CENTRO OCIDENTAL PARANAENSE
+               Centro-oeste, faixa média esquerda
+               Cidades: Campo Mourão, Goioerê, Ubiratã
+          ════════════════════════════════════ -->
+          <path class="pr-region" id="r-coc"
+            data-name="Centro Ocidental Paranaense"
+            data-prod="Soja · Milho · Trigo · Suínos · Bovinos"
+            data-area="14.259 km²"
+            data-highlight="Alta produtividade em plantio direto. Campo Mourão lidera o agronegócio regional com forte presença de cooperativas."
+            tabindex="0" role="button" aria-label="Centro Ocidental Paranaense"
+            d="M 55 238
+               L 124 244
+               L 185 248
+               L 238 241
+               L 242 162
+               L 268 162
+               L 272 218
+               L 270 275
+               L 250 295
+               L 215 305
+               L 172 310
+               L 124 307
+               L 68 300
+               L 34 290
+               L 29 260
+               Z"/>
+
+          <!-- ════════════════════════════════════
+               5. CENTRO ORIENTAL PARANAENSE
+               Centro-leste, Campos Gerais
+               Cidades: Ponta Grossa, Telêmaco Borba, Irati
+          ════════════════════════════════════ -->
+          <path class="pr-region" id="r-cor"
+            data-name="Centro Oriental Paranaense"
+            data-prod="Soja · Trigo · Feijão · Pinus · Papel e celulose"
+            data-area="24.529 km²"
+            data-highlight="Campos Gerais e Serra da Esperança. Ponta Grossa é polo industrial, agrícola e logístico de grande importância."
+            tabindex="0" role="button" aria-label="Centro Oriental Paranaense"
+            d="M 386 142
+               L 450 150
+               L 480 158
+               L 519 165
+               L 565 168
+               L 612 160
+               L 650 142
+               L 658 190
+               L 653 230
+               L 640 265
+               L 618 292
+               L 590 308
+               L 560 318
+               L 528 322
+               L 498 318
+               L 468 308
+               L 445 292
+               L 430 272
+               L 418 248
+               L 410 222
+               L 408 195
+               L 410 172
+               L 386 158
+               L 355 152
+               Z"/>
+
+          <!-- ════════════════════════════════════
+               6. OESTE DO PARANÁ
+               Grande bloco sudoeste
+               Cidades: Cascavel, Toledo, Foz do Iguaçu, Marechal Cândido Rondon
+          ════════════════════════════════════ -->
+          <path class="pr-region" id="r-oeste"
+            data-name="Oeste do Paraná"
+            data-prod="Soja · Frango · Suínos · Milho · Leite · Trigo"
+            data-area="22.837 km²"
+            data-highlight="Capital do agronegócio paranaense. Cascavel e Toledo são polos nacionais de soja, avicultura e suinocultura."
+            tabindex="0" role="button" aria-label="Oeste do Paraná"
+            d="M 29 260
+               L 34 290
+               L 68 300
+               L 124 307
+               L 172 310
+               L 215 305
+               L 250 295
+               L 262 340
+               L 265 382
+               L 255 410
+               L 230 428
+               L 196 438
+               L 158 442
+               L 118 436
+               L 84 422
+               L 55 402
+               L 34 378
+               L 22 352
+               L 19 322
+               L 29 310
+               Z"/>
+
+          <!-- ════════════════════════════════════
+               7. SUDOESTE DO PARANÁ
+               Ponta sudoeste afunilada
+               Cidades: Francisco Beltrão, Pato Branco, Dois Vizinhos
+          ════════════════════════════════════ -->
+          <path class="pr-region" id="r-sw"
+            data-name="Sudoeste do Paraná"
+            data-prod="Soja · Milho · Leite · Aves · Suínos · Feijão"
+            data-area="17.071 km²"
+            data-highlight="Referência nacional em agricultura familiar sustentável. Francisco Beltrão e Pato Branco são os centros regionais."
+            tabindex="0" role="button" aria-label="Sudoeste do Paraná"
+            d="M 158 442
+               L 196 438
+               L 230 428
+               L 255 410
+               L 268 432
+               L 275 458
+               L 268 480
+               L 248 498
+               L 218 508
+               L 185 512
+               L 152 508
+               L 120 498
+               L 93 480
+               L 72 458
+               L 52 435
+               L 84 422
+               L 118 436
+               Z"/>
+
+          <!-- ════════════════════════════════════
+               8. CENTRO-SUL PARANAENSE
+               Miolo central-sul (erva-mate e pinhão)
+               Cidades: Guarapuava, Palmas, Laranjeiras do Sul
+          ════════════════════════════════════ -->
+          <path class="pr-region" id="r-cs"
+            data-name="Centro-Sul Paranaense"
+            data-prod="Erva-mate · Pinhão · Soja · Milho · Feijão · Bovinos"
+            data-area="18.361 km²"
+            data-highlight="Maior produtor de erva-mate do Brasil. Guarapuava lidera a tradição centenária da erva-mate paranaense."
+            tabindex="0" role="button" aria-label="Centro-Sul Paranaense"
+            d="M 250 295
+               L 270 275
+               L 272 218
+               L 268 162
+               L 316 158
+               L 355 152
+               L 386 158
+               L 410 172
+               L 408 195
+               L 410 222
+               L 418 248
+               L 430 272
+               L 432 305
+               L 425 338
+               L 408 358
+               L 382 372
+               L 352 380
+               L 318 382
+               L 285 378
+               L 258 368
+               L 248 348
+               L 262 340
+               L 250 295
+               Z"/>
+
+          <!-- ════════════════════════════════════
+               9. METROPOLITANA DE CURITIBA
+               Leste com projeção para a direita + litoral
+               Cidades: Curitiba, São José dos Pinhais, Paranaguá, Guaratuba
+          ════════════════════════════════════ -->
+          <path class="pr-region" id="r-met"
+            data-name="Metropolitana de Curitiba e Litoral"
+            data-prod="Horticultura · Olericultura · Pesca · Turismo rural · Banana"
+            data-area="16.581 km²"
+            data-highlight="Curitiba coordena as políticas ambientais do estado. Paranaguá é o maior porto exportador de grãos da América Latina."
+            tabindex="0" role="button" aria-label="Metropolitana de Curitiba e Litoral"
+            d="M 445 292
+               L 468 308
+               L 498 318
+               L 528 322
+               L 560 318
+               L 590 308
+               L 618 292
+               L 640 265
+               L 653 230
+               L 658 190
+               L 665 218
+               L 675 252
+               L 697 272
+               L 710 305
+               L 710 340
+               L 700 372
+               L 682 400
+               L 658 420
+               L 628 435
+               L 595 445
+               L 560 450
+               L 525 448
+               L 490 440
+               L 458 428
+               L 435 412
+               L 415 392
+               L 408 368
+               L 410 345
+               L 422 325
+               L 432 305
+               L 430 272
+               Z"/>
+
+          <!-- ════════════════════════════════════
+               10. SUDESTE PARANAENSE
+               Extremo sudeste, entre Sul e Metropolitana
+               Cidades: União da Vitória, São Mateus do Sul
+          ════════════════════════════════════ -->
+          <path class="pr-region" id="r-se"
+            data-name="Sudeste Paranaense"
+            data-prod="Erva-mate · Pinus · Feijão · Milho · Bovinos · Peixes"
+            data-area="18.026 km²"
+            data-highlight="Região de contrastes: Serra do Mar ao leste e campos do planalto ao oeste. União da Vitória é polo regional."
+            tabindex="0" role="button" aria-label="Sudeste Paranaense"
+            d="M 268 432
+               L 285 378
+               L 318 382
+               L 352 380
+               L 382 372
+               L 408 358
+               L 408 368
+               L 415 392
+               L 435 412
+               L 458 428
+               L 490 440
+               L 525 448
+               L 530 470
+               L 518 495
+               L 498 512
+               L 465 525
+               L 428 532
+               L 390 530
+               L 356 522
+               L 318 510
+               L 290 495
+               L 268 478
+               L 262 458
+               L 275 458
+               L 268 432
+               Z"/>
+
+          <!-- ════ LABELS ════ -->
+          <text class="mapa-label" x="106" y="160">Noroeste</text>
+
+          <text class="mapa-label" x="296" y="130">Norte</text>
+          <text class="mapa-label" x="296" y="142">Central</text>
+
+          <text class="mapa-label" x="492" y="112">Norte</text>
+          <text class="mapa-label" x="492" y="124">Pioneiro</text>
+
+          <text class="mapa-label" x="142" y="268">C. Ocidental</text>
+
+          <text class="mapa-label" x="512" y="238">C. Oriental</text>
+
+          <text class="mapa-label" x="128" y="368">Oeste</text>
+
+          <text class="mapa-label" x="168" y="475">Sudoeste</text>
+
+          <text class="mapa-label" x="322" y="298">Centro-Sul</text>
+
+          <text class="mapa-label" x="578" y="322">Metropolitana</text>
+          <text class="mapa-label" x="578" y="334">de Curitiba</text>
+
+          <text class="mapa-label" x="388" y="452">Sudeste</text>
+
+          <!-- ════ CURITIBA ════ -->
+          <circle cx="518" cy="355" r="8" fill="#F0C040" opacity="0.95" stroke="#0A1A0D" stroke-width="2"/>
+          <circle cx="518" cy="355" r="3.5" fill="#0A1A0D"/>
+          <text class="mapa-capital" x="530" y="360">Curitiba</text>
+
+          <!-- ════ RIO PARANÁ (borda oeste) ════ -->
+          <path d="
+            M 43 88 Q 28 120 29 165 Q 30 200 29 238
+            Q 28 272 29 310 Q 28 338 22 365
+            Q 18 395 30 420 Q 42 445 52 462
+          " stroke="#4A90D9" stroke-width="3" fill="none" opacity="0.6"
+          stroke-linecap="round"/>
+
+          <!-- ════ RIO IGUAÇU (diagonal centro) ════ -->
+          <path d="
+            M 415 392 Q 370 398 318 400
+            Q 265 402 215 405 Q 155 408 93 420
+          " stroke="#4A90D9" stroke-width="2" fill="none" opacity="0.45"
+          stroke-linecap="round" stroke-dasharray="7 4"/>
+        </svg>
+
+        <!-- Tooltip desktop -->
+        <div class="mapa-tooltip" id="mapaTooltip" role="tooltip" hidden>
+          <div class="tooltip-header">
+            <div class="tooltip-pin" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5" fill="currentColor"/>
+              </svg>
+            </div>
+            <h4 class="tooltip-name" id="tooltipName"></h4>
+          </div>
+          <p class="tooltip-highlight" id="tooltipHighlight"></p>
+          <div class="tooltip-row"><span class="tooltip-lbl">Principais produtos</span><p id="tooltipProd"></p></div>
+          <div class="tooltip-row"><span class="tooltip-lbl">Área</span><p id="tooltipArea"></p></div>
+        </div>
+      </div>
+
+      <!-- Painel lateral / info mobile -->
+      <div class="mapa-info" id="mapaInfo" aria-live="polite">
+        <div class="mapa-info-empty" id="mapaInfoEmpty">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <circle cx="20" cy="20" r="17" stroke="rgba(200,232,122,0.3)" stroke-width="2"/>
+            <path d="M20 10 a7 7 0 0 1 7 7c0 5-7 11-7 11S13 22 13 17a7 7 0 0 1 7-7z" fill="rgba(200,232,122,0.1)" stroke="#C8E87A" stroke-width="1.5"/>
+            <circle cx="20" cy="17" r="2" fill="#C8E87A" opacity="0.6"/>
+          </svg>
+          <p>Selecione uma região<br>do mapa para ver detalhes</p>
+        </div>
+        <div class="mapa-info-detail" id="mapaInfoDetail" hidden>
+          <h4 id="infoName"></h4>
+          <p class="info-highlight" id="infoHighlight"></p>
+          <div class="info-row"><span class="info-lbl">Produtos</span><p id="infoProd"></p></div>
+          <div class="info-row"><span class="info-lbl">Área</span><p id="infoArea"></p></div>
+        </div>
+      </div>
+
+      <div class="mapa-legenda" aria-label="Legenda do mapa">
+        <div class="legenda-item"><span class="legenda-cor" style="background:rgba(200,232,122,0.2);border-color:rgba(200,232,122,0.5)"></span>Regiões</div>
+        <div class="legenda-item"><span class="legenda-cor" style="background:rgba(200,232,122,0.55);border-color:#C8E87A"></span>Selecionada</div>
+        <div class="legenda-item"><span class="legenda-cor" style="background:#F0C040;border-color:#0A1A0D;border-radius:50%"></span>Curitiba</div>
+        <div class="legenda-item"><span class="legenda-rio"></span>Rio Paraná</div>
+        <div class="legenda-item"><span class="legenda-rio" style="background:#4A90D9;opacity:.5;border-top:2px dashed #4A90D9;height:0;margin-top:6px;border-radius:0"></span>Rio Iguaçu</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ NOVA SEÇÃO: VOZES DO CAMPO ═══ -->
+<section class="section-vozes" id="vozes" aria-labelledby="vozes-h2">
+  <div class="container">
+    <header class="section-header">
+      <div class="section-tag section-tag-terra">Vozes do Campo</div>
+      <h2 class="section-title" id="vozes-h2">A terra tem<br><em>quem a cuide</em></h2>
+      <p class="section-desc">Por trás de cada tonelada colhida e cada hectare preservado, há uma história humana. Estas são algumas das vozes que constroem o equilíbrio.</p>
+    </header>
+    <div class="vozes-grid" role="list">
+
+      <article class="voz-card" role="listitem" tabindex="0">
+        <div class="voz-aspas" aria-hidden="true">"</div>
+        <blockquote class="voz-texto">"Aprendi com meu pai que a terra cansa se você não a respeita. Hoje planto sem revolver o solo e minha colheita nunca foi tão farta."</blockquote>
+        <div class="voz-author">
+          <div class="voz-avatar" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <circle cx="18" cy="18" r="17" fill="rgba(139,69,19,0.2)" stroke="rgba(139,69,19,0.4)" stroke-width="1.5"/>
+              <rect x="15" y="22" width="6" height="10" fill="#5C2E00" rx="1" opacity="0.6"/>
+              <ellipse cx="18" cy="21" rx="8" ry="9" fill="#2D5A1B"/>
+              <ellipse cx="18" cy="15" rx="5.5" ry="6" fill="#3D7A20"/>
+              <ellipse cx="18" cy="11" rx="3.5" ry="3.5" fill="#C8E87A" opacity="0.8"/>
+            </svg>
+          </div>
+          <div><span class="voz-nome">Seu Raimundo, 58 anos</span><span class="voz-local">Agricultor familiar · Guarapuava, PR</span></div>
+        </div>
+      </article>
+
+      <article class="voz-card" role="listitem" tabindex="0">
+        <div class="voz-aspas" aria-hidden="true">"</div>
+        <blockquote class="voz-texto">"Quando a mata ao redor foi recuperada, as abelhas voltaram. A produtividade do meu pomar aumentou 30% sem nenhum produto químico."</blockquote>
+        <div class="voz-author">
+          <div class="voz-avatar" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <circle cx="18" cy="18" r="17" fill="rgba(74,144,217,0.15)" stroke="rgba(74,144,217,0.3)" stroke-width="1.5"/>
+              <path d="M10 26 Q12 20 18 18 Q24 20 26 26" stroke="#4A90D9" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <circle cx="18" cy="14" r="6" fill="none" stroke="#4A90D9" stroke-width="1.5"/>
+              <path d="M15 14 Q18 10 21 14" fill="#4A90D9" opacity="0.3"/>
+              <circle cx="18" cy="14" r="2.5" fill="#4A90D9" opacity="0.6"/>
+            </svg>
+          </div>
+          <div><span class="voz-nome">Dona Tereza, 44 anos</span><span class="voz-local">Produtora agroecológica · Irati, PR</span></div>
+        </div>
+      </article>
+
+      <article class="voz-card" role="listitem" tabindex="0">
+        <div class="voz-aspas" aria-hidden="true">"</div>
+        <blockquote class="voz-texto">"Usamos drones para mapear o campo e reduzimos o uso de defensivos em 40%. A tecnologia não nos afastou da terra — nos aproximou mais dela."</blockquote>
+        <div class="voz-author">
+          <div class="voz-avatar" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <circle cx="18" cy="18" r="17" fill="rgba(200,232,122,0.1)" stroke="rgba(200,232,122,0.3)" stroke-width="1.5"/>
+              <circle cx="18" cy="18" r="8" fill="none" stroke="#C8E87A" stroke-width="1.5" stroke-dasharray="2 2"/>
+              <path d="M18 14 L20 18 L18 16 L16 18Z" fill="#C8E87A"/>
+              <circle cx="18" cy="22" r="2" fill="#F0C040"/>
+            </svg>
+          </div>
+          <div><span class="voz-nome">Lucas Ferreira, 28 anos</span><span class="voz-local">Técnico agrícola · Campo Mourão, PR</span></div>
+        </div>
+      </article>
+
+      <article class="voz-card" role="listitem" tabindex="0">
+        <div class="voz-aspas" aria-hidden="true">"</div>
+        <blockquote class="voz-texto">"Na escola aprendi que sustentabilidade é um conceito. Na roça aprendi que é uma necessidade. Cuidar do rio que passa na fazenda é cuidar da nossa vida."</blockquote>
+        <div class="voz-author">
+          <div class="voz-avatar" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <circle cx="18" cy="18" r="17" fill="rgba(200,232,122,0.1)" stroke="rgba(200,232,122,0.3)" stroke-width="1.5"/>
+              <path d="M18 8 C12 12 9 20 12 25 C15 30 21 30 24 25 C27 20 24 12 18 8Z" fill="#1C4A1E"/>
+              <path d="M18 8 C24 12 27 20 24 25" fill="none" stroke="#C8E87A" stroke-width="1.2" opacity="0.5"/>
+              <path d="M12 19 L16 23 L24 15" stroke="#C8E87A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div><span class="voz-nome">Mariana Silva, 17 anos</span><span class="voz-local">Estudante · Londrina, PR</span></div>
+        </div>
+      </article>
+
+      <article class="voz-card" role="listitem" tabindex="0">
+        <div class="voz-aspas" aria-hidden="true">"</div>
+        <blockquote class="voz-texto">"Plantamos eucalipto entre as pastagens. O gado tem sombra, o solo tem proteção e temos outra fonte de renda. A floresta não compete — ela colabora."</blockquote>
+        <div class="voz-author">
+          <div class="voz-avatar" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <circle cx="18" cy="18" r="17" fill="rgba(139,69,19,0.15)" stroke="rgba(139,69,19,0.3)" stroke-width="1.5"/>
+              <rect x="16" y="24" width="4" height="8" fill="#5C2E00" rx="1" opacity="0.7"/>
+              <ellipse cx="18" cy="23" rx="8" ry="9" fill="#1C4A1E"/>
+              <ellipse cx="18" cy="17" rx="5.5" ry="6" fill="#2D5A1B"/>
+              <ellipse cx="18" cy="12" rx="3.5" ry="4" fill="#8BC34A" opacity="0.8"/>
+            </svg>
+          </div>
+          <div><span class="voz-nome">Família Matos</span><span class="voz-local">Sistema ILPF · Palmas, PR</span></div>
+        </div>
+      </article>
+
+      <article class="voz-card" role="listitem" tabindex="0">
+        <div class="voz-aspas" aria-hidden="true">"</div>
+        <blockquote class="voz-texto">"O Paraná prova todo dia que produtividade e consciência ambiental andam juntas. Não somos contra o progresso — somos o progresso que respeita a vida."</blockquote>
+        <div class="voz-author">
+          <div class="voz-avatar" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <circle cx="18" cy="18" r="17" fill="rgba(240,192,64,0.1)" stroke="rgba(240,192,64,0.3)" stroke-width="1.5"/>
+              <polygon points="18,8 20.5,15.5 28,15.5 22,20 24.5,27.5 18,23 11.5,27.5 14,20 8,15.5 15.5,15.5" fill="#F0C040" opacity="0.85"/>
+            </svg>
+          </div>
+          <div><span class="voz-nome">Engenheira Camila Rocha</span><span class="voz-local">Pesquisadora · EMBRAPA Soja, Londrina</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ VOCÊ FAZ PARTE ═══ -->
+<section class="section-voce" id="voce" aria-labelledby="voce-h2">
+  <div class="voce-bg" aria-hidden="true"><canvas id="voce-canvas"></canvas></div>
+  <div class="container">
+    <header class="section-header">
+      <div class="section-tag section-tag-terra">Você Faz Parte</div>
+      <h2 class="section-title" id="voce-h2">O futuro sustentável<br><em>começa agora</em></h2>
+      <p class="section-desc">Cada escolha, do campo à cidade, constrói o equilíbrio que o planeta precisa. Você é parte dessa história.</p>
+    </header>
+    <div class="timeline" role="list">
+      <div class="timeline-line" aria-hidden="true"></div>
+      <div class="timeline-item ti-left" data-delay="0" role="listitem">
+        <div class="ti-dot" aria-hidden="true"></div>
+        <div class="ti-card">
+          <div class="ti-year">Hoje</div>
+          <h4>Consuma com consciência</h4>
+          <p>Escolher produtos com selo de sustentabilidade incentiva produtores a adotarem práticas mais responsáveis.</p>
+        </div>
+      </div>
+      <div class="timeline-item ti-right" data-delay="200" role="listitem">
+        <div class="ti-dot" aria-hidden="true"></div>
+        <div class="ti-card">
+          <div class="ti-year">Amanhã</div>
+          <h4>Reduza o desperdício</h4>
+          <p>No Brasil, 30% dos alimentos são desperdiçados. Planejar compras e reutilizar sobras já é um ato ambiental.</p>
+        </div>
+      </div>
+      <div class="timeline-item ti-left" data-delay="400" role="listitem">
+        <div class="ti-dot" aria-hidden="true"></div>
+        <div class="ti-card">
+          <div class="ti-year">Esta semana</div>
+          <h4>Plante algo</h4>
+          <p>Uma horta em casa, um vaso com ervas — reconectar-se à terra muda a percepção sobre quem produz o alimento.</p>
+        </div>
+      </div>
+      <div class="timeline-item ti-right" data-delay="600" role="listitem">
+        <div class="ti-dot" aria-hidden="true"></div>
+        <div class="ti-card">
+          <div class="ti-year">Sempre</div>
+          <h4>Valorize o agricultor</h4>
+          <p>O produtor rural cuida de 320 milhões de toneladas de alimento e ainda guarda as florestas que todos respiramos.</p>
+        </div>
+      </div>
+    </div>
+    <div class="voce-cta">
+      <div class="voce-cta-inner">
+        <h3><em>"O agro forte e o futuro sustentável</em><br>não são destinos separados —<br>são o mesmo caminho."</h3>
+        <p>Concurso Agrinho 2026 · Tema: Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
+        <div class="voce-cta-seeds" aria-hidden="true">
+          <svg class="seed-anim" width="28" height="28" viewBox="0 0 28 28" fill="none" style="animation-delay:0s"><rect x="12" y="18" width="4" height="8" fill="#5C2E00" rx="1"/><ellipse cx="14" cy="18" rx="7" ry="8" fill="#2D5A1B"/><ellipse cx="14" cy="12" rx="5" ry="5.5" fill="#3D7A20"/><ellipse cx="14" cy="8" rx="3" ry="3.5" fill="#C8E87A" opacity="0.85"/></svg>
+          <svg class="seed-anim" width="28" height="28" viewBox="0 0 28 28" fill="none" style="animation-delay:0.35s"><path d="M14 26 L14 12" stroke="#5C2E00" stroke-width="2" stroke-linecap="round"/><path d="M14 16 Q9 12 7 8" stroke="#3D7A20" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="M14 14 Q19 10 21 6" stroke="#3D7A20" stroke-width="1.8" fill="none" stroke-linecap="round"/><ellipse cx="14" cy="8" rx="5" ry="6.5" fill="#8BC34A" opacity="0.75"/></svg>
+          <svg class="seed-anim" width="28" height="28" viewBox="0 0 28 28" fill="none" style="animation-delay:0.7s"><rect x="12" y="21" width="4" height="5" fill="#5C2E00" rx="1"/><path d="M14 21 L14 10" stroke="#8BC34A" stroke-width="1.5" stroke-linecap="round"/><ellipse cx="10" cy="13" rx="4.5" ry="2.5" fill="#C8E87A" opacity="0.6" transform="rotate(-20,10,13)"/><ellipse cx="18" cy="15" rx="4.5" ry="2.5" fill="#C8E87A" opacity="0.6" transform="rotate(20,18,15)"/><ellipse cx="14" cy="9" rx="3.5" ry="4.5" fill="#C8E87A" opacity="0.9"/></svg>
+          <svg class="seed-anim" width="28" height="28" viewBox="0 0 28 28" fill="none" style="animation-delay:1.05s"><circle cx="14" cy="14" r="11" fill="none" stroke="#4A90D9" stroke-width="1.2" opacity="0.4"/><path d="M14 5 C8 8 5 16 8 21 C11 26 17 26 20 21 C23 16 20 8 14 5Z" fill="#1C4A1E"/><path d="M14 5 C20 8 23 16 20 21" fill="none" stroke="#C8E87A" stroke-width="1.2" opacity="0.5"/><path d="M9 15 L13 19 L19 11" stroke="#C8E87A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ JOGO ═══ -->
+<section class="section-game" id="jogo" aria-labelledby="jogo-h2">
+  <div class="container">
+    <header class="section-header">
+      <div class="section-tag section-tag-amber">Mini-Jogo Educativo</div>
+      <h2 class="section-title" id="jogo-h2">Plante o<br><em>Futuro</em></h2>
+      <p class="section-desc">Plante sementes, regue as mudas e colha os alimentos. Aprenda na prática o ciclo de uma plantação sustentável!</p>
+    </header>
+
+    <div class="game-wrapper">
+      <!-- HUD -->
+      <div class="game-hud">
+        <div class="hud-item">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M11 2C11 2 5 7 5 12a6 6 0 0012 0C17 7 11 2 11 2Z" fill="#4A90D9" opacity="0.8"/><path d="M11 2C11 2 17 7 17 12" fill="none" stroke="#7AB8F5" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/></svg>
+          <div class="hud-bar-wrap">
+            <div class="hud-bar-bg" role="progressbar" aria-label="Nível de água" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100">
+              <div class="hud-bar water-bar" id="waterBar"></div>
+            </div>
+            <span class="hud-label" id="waterLabel" aria-live="polite">Água: 100</span>
+          </div>
+        </div>
+        <div class="hud-score">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><polygon points="11,2 13.2,7.9 19.5,7.9 14.4,11.5 16.6,17.5 11,14 5.4,17.5 7.6,11.5 2.5,7.9 8.8,7.9" fill="#F0C040" opacity="0.9"/></svg>
+          <span class="hud-pts" id="gameScore" aria-live="polite" aria-label="Pontuação">0 pts</span>
+        </div>
+        <div class="hud-day">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="9" fill="none" stroke="#C8E87A" stroke-width="1.5"/><path d="M11 6v5l3 3" stroke="#C8E87A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="hud-pts" id="gameDay" aria-live="polite">Dia 1</span>
+        </div>
+        <!-- Cesta de colheita -->
+        <div class="game-basket" aria-label="Cesta de colheita">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <path d="M5 12 Q4 10 7 9 L9 12Z" fill="#8B4513" opacity="0.8"/>
+            <path d="M23 12 Q24 10 21 9 L19 12Z" fill="#8B4513" opacity="0.8"/>
+            <path d="M5 12 L7 23 Q7 25 9 25 L19 25 Q21 25 21 23 L23 12Z" fill="#C17F3A" opacity="0.85"/>
+            <line x1="5" y1="12" x2="23" y2="12" stroke="#8B4513" stroke-width="1.5"/>
+            <path d="M9 12 L9 9 Q9 5 14 5 Q19 5 19 9 L19 12" stroke="#5C2E00" stroke-width="1.5" fill="none"/>
+          </svg>
+          <div>
+            <div class="basket-lbl">Cesta</div>
+            <div class="basket-cnt" id="basketCount">0 itens</div>
+          </div>
+          <div class="basket-items" id="basketItems" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <!-- Campo -->
+      <div class="game-field" id="gameField" role="grid" aria-label="Campo de plantio — clique nas parcelas para interagir"></div>
+
+      <!-- Ações -->
+      <div class="game-actions" role="toolbar" aria-label="Ações disponíveis">
+        <button class="game-btn active" id="btnSeed" data-action="seed" aria-pressed="true">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><ellipse cx="9" cy="11" rx="5" ry="6" fill="#C8E87A" opacity="0.8"/><path d="M9 5 L9 2" stroke="#5C2E00" stroke-width="1.5" stroke-linecap="round"/><path d="M6 7 Q9 5 12 7" fill="none" stroke="#8BC34A" stroke-width="1.2" stroke-linecap="round"/></svg>
+          Plantar
+        </button>
+        <button class="game-btn" id="btnWater" data-action="water" aria-pressed="false">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 2C9 2 4 7 4 11a5 5 0 0010 0C14 7 9 2 9 2Z" fill="#4A90D9" opacity="0.8"/><path d="M9 2C9 2 14 7 14 11" fill="none" stroke="#7AB8F5" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/></svg>
+          Regar
+        </button>
+        <button class="game-btn" id="btnHarvest" data-action="harvest" aria-pressed="false">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 2 L9 14" stroke="#8BC34A" stroke-width="1.5" stroke-linecap="round"/><path d="M5 8 Q9 6 13 8" stroke="#C8E87A" stroke-width="1.2" fill="none" stroke-linecap="round"/><path d="M4 11 Q9 9 14 11" stroke="#C8E87A" stroke-width="1.2" fill="none" stroke-linecap="round"/><line x1="4" y1="15" x2="14" y2="15" stroke="#8B4513" stroke-width="2" stroke-linecap="round"/></svg>
+          Colher
+        </button>
+        <button class="game-btn game-btn-next" id="btnNextDay">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="7" stroke="#F0C040" stroke-width="1.5" fill="none"/><path d="M9 5 L9 9 L12 12" stroke="#F0C040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Próximo Dia
+        </button>
+        <button class="game-btn game-btn-restart" id="btnRestart" aria-label="Reiniciar jogo">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9 A6 6 0 1 1 9 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/><path d="M3 5 L3 9 L7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          Reiniciar
+        </button>
+      </div>
+
+      <!-- Mensagem -->
+      <div class="game-message" id="gameMessage" role="status" aria-live="polite">
+        Selecione uma ação e clique em uma parcela do campo!
+      </div>
+
+      <!-- Conquistas -->
+      <div class="game-achievements" id="gameAchievements" aria-live="polite" aria-label="Conquistas desbloqueadas"></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ═══ RODAPÉ ═══ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="display:inline-block;vertical-align:middle;margin-right:6px">
+            <ellipse cx="12" cy="20" rx="8" ry="3" fill="rgba(200,232,122,0.15)"/>
+            <path d="M12 20V10" stroke="#C8E87A" stroke-width="2" stroke-linecap="round"/>
+            <path d="M12 14 Q8 10 6 6" stroke="#8BC34A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M12 12 Q16 8 18 4" stroke="#8BC34A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <circle cx="12" cy="9" r="2" fill="#C8E87A"/>
+          </svg>
+          Agrinho 2026
+        </span>
+        <p>Agro forte, futuro sustentável:<br>equilíbrio entre produção e meio ambiente</p>
+      </div>
+      <div class="footer-quote">
+        <em>"A terra é o nosso maior laboratório.<br>Aprender com ela é ciência."</em>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Paraná · Brasil · Concurso Agrinho 2026</span>
+      <span>Feito com amor e respeito pela terra</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
